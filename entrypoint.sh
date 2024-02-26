@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+#set -e
 
 export BW_CLIENTID=${BW_CLIENTID}
 export BW_CLIENTSECRET=${BW_CLIENTSECRET}
