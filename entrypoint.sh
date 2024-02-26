@@ -1,8 +1,10 @@
 #!/bin/bash
+
+set -e
+
 export BW_CLIENTID=${BW_CLIENTID}
 export BW_CLIENTSECRET=${BW_CLIENTSECRET}
 export BW_PASSWORD=${BW_PASSWORD}
-set -e
 
 bw config server ${BW_HOST}
 
