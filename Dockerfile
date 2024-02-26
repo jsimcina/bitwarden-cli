@@ -1,4 +1,4 @@
-FROM debian:sid
+FROM debian:stable-slim
 
 ENV BW_CLI_VERSION=2024.2.0
 
