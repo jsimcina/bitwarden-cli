@@ -10,8 +10,8 @@ RUN apt update && \
     mv bw /usr/local/bin/bw && \
     rm -rfv *.zip
 
+RUN chmod +x entrypoint.sh
+
 COPY entrypoint.sh /
 
-RUN chmod +x /entrypoint.sh
-
-CMD ["bash", "-c", "./entrypoint.sh"]
+CMD ["/entrypoint.sh"]
