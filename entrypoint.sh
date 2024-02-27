@@ -8,8 +8,8 @@ export BW_PASSWORD=${BW_PASSWORD}
 
 bw config server ${BW_HOST}
 
-export BW_SESSION=$(bw login --apikey)
-
+export BW_SESSION=$(bw login --apikey --passwordenv BW_PASSWORD)
+export BW_SESSION=$(bw unlock --passwordenv BW_PASSWORD --raw)
 bw unlock --check
 
 echo 'Running `bw server` on port 8087'
